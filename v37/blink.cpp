@@ -1,6 +1,6 @@
 #include <arduino.h>
 
-const int LED_PIN = 4
+const int LED_PIN = 4;
 
 void setup() {
     Serial.begin(115200);
