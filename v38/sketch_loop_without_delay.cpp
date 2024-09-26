@@ -1,4 +1,4 @@
-#include<cstdio>
+#include<stdio.h>
 #include<unistd.h>
 #include<time.h>
 
@@ -28,7 +28,7 @@ void loop() {
         if (current_index>number_count)
             current_index = 0;
 
-        printf("%d", numbers[current_index]);
+        printf("%d\n", numbers[current_index]);
 
         current_index++;
     }
@@ -37,7 +37,7 @@ void loop() {
 // Den här funktionen gör att ett vanligt C++-program fungerar
 // ungefär som i Ardunio-ramverket. Först körs setup() en gång,
 // därefter körs loop() i all evighet.
-void main() {
+int main() {
     setup();
     while(true) {
         loop();
